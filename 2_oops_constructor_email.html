@@ -1,0 +1,51 @@
+<table border="4" id="demo" cellspacing="10" cellpadding="10" bgcolor="grey">
+
+</table>
+
+<script type="text/javascript">
+    class Emp {
+        constructor() {
+            let data = [
+                {
+                    name: "Jay Patel",
+                    email: "jaypatel12@gmail.com",
+                    phone: "9879256410",
+                },
+                {
+                    name: "Ajay Khatra",
+                    email: "ajayk20@gmail.com",
+                    phone: "7359165418",
+                },
+                {
+                    name: "Vijay Dangodra",
+                    email: "vijaydangodra125@gmail.com",
+                    phone: "8752698745",
+                },
+                {
+                    name: "Ashish Parmar",
+                    email: "ashishparmar9@gmail.com",
+                    phone: "9897965453",
+                },
+            ];
+            let tbl = ` 
+                <tr>
+                    <th>Username</th>
+                    <th>Email ID.</th>
+                    <th>Phone No.</th>
+                </tr>
+            `
+            for (let i in data) {
+                tbl += `
+              <tr>
+                <th>${data[i].name}</th>
+                <th>${data[i].email}</th>
+                <th>${data[i].phone}</th>
+                </tr>
+              `
+            }
+            document.getElementById("demo").innerHTML = tbl;
+        }
+    }
+    let obj = new Emp;
+
+</script>

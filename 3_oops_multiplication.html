@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    class table {
+        number() {
+            let no = parseInt(prompt("Enter Number of Multiplication Table :-"));
+            let i = 1;
+
+            do {
+                let ans = i * no;
+                document.write("<h1>" + no + "*" + i + "=" + ans + "</h1>");
+                i++;
+
+            } while (i <= 10);
+
+        }
+    }
+    let multi = new table;
+    multi.number();
+</script>
